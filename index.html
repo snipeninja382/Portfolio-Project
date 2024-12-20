@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="webpage" href="Contact.html">
+    <link rel="webpage" href="index.html">
+    <link rel="webpage" href="Projects.html">
+    <link rel="webpage" href="Resume.html">
+    <link rel="stylesheet" href="General-styles.css">
+
+    <style>
+        .hero{
+            background-color: bisque;
+            margin: 0 auto;
+            max-width: 100%;
+            height: 600px;
+            background-image: url(GreatPhoto2.jpg);
+            background-size: auto;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero div h2{
+            text-align: center;
+            padding: 1.25em;
+            background-color: white;
+            border: 2px solid black;
+            box-shadow: 5px 5px black;
+            max-width: 800px;
+           
+        }
+        .Auto{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            margin: 0 2.5em 0 2.5em;
+        }
+        .Image{
+            grid-row: span 2;
+            text-align: center;
+        }
+        .section-title{
+            max-width: 800px;
+            text-align: center;
+            border: 2px solid black;
+            padding: 5px;
+            box-shadow: 5px 5px black;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+        .main{
+            grid-column: span 2;
+        }
+        .mini-side1{
+           grid-column: 2; 
+        }
+        .mini-side2{
+            grid-column: 3;
+        }
+        .Auto{
+            margin: 2.5em;
+        }
+        .Auto div{
+            padding: 2.5em;
+        }
+        .Auto div img{
+            border-radius: 450px;
+            max-width: 24.875em;
+            box-shadow: 10px 10px #f7dda2;
+        }
+        @media(max-width:786px){
+            .Auto{
+                display: inline-block;
+                margin: .1em;
+                padding: .1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="T.png" alt="Logo">
+        <div class="links">
+            <ul>
+                <li><a href="index.html" class="transition">Home</a></li>
+                <li><a href="Projects.html" class="transition">Projects</a></li>
+                <li><a href="Resume.html" class="transition">Resume</a></li>
+                <li><a href="Contact.html" class="transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div>
+            <h2>Welcome to the greatest webpage of all time!</h2>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Hello my name is Thomas Fraule!</h2>
+    </div>
+
+    <div class="Auto">
+        <div class="Image">
+            <img src="DSC_0396.jpg" alt="profile pic">
+        </div>
+        <div class="main">
+            <h2>My Story</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error eum, impedit tempora harum, officia commodi dicta quos nihil excepturi sint porro reprehenderit iste sit iusto, a dolore sequi alias quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dolore odio deleniti. Alias doloribus nemo asperiores suscipit cupiditate totam quos quo error repudiandae ducimus, obcaecati fugiat, eveniet eaque tempora quisquam!
+            Deserunt reiciendis ea nisi asperiores provident enim iste assumenda est quas eveniet? Dignissimos a ullam provident quo ut doloremque, iusto maiores sit quaerat odit voluptates animi ratione nemo dicta nisi.
+            Consectetur nisi, accusamus qui maiores laboriosam consequuntur neque aspernatur expedita, nulla cum labore veniam </p>
+        </div>
+        <div class="mini-side1">
+            <h2>My Aspirations</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error eum, impedit tempora harum, officia commodi dicta quos nihil excepturi sint porro reprehenderit iste sit iusto, a dolore sequi alias quasi. Lorem ipsum dolor  </p>
+        </div>
+        <div class="mini-side2">
+            <h2>My Skills</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error eum, impedit tempora harum, officia commodi dicta quos nihil excepturi sint porro reprehenderit iste sit iusto, a dolor</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Thomas Fraule Innovations. All rights reserved.</p>
+    </footer>
+</body>
+</html>

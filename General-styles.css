@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+nav{
+    background-color: black;
+    padding: 20px;
+    color: white;
+    display: grid;
+    grid-template-areas: 
+    "logo Nav Nav";
+    align-items: center;
+    width: 100%;
+}
+nav ul{
+    list-style-type: none; 
+    display: flex;
+}
+.links{
+    display: flex;
+    grid-area: Nav;
+    justify-content: end;
+}
+.transition{
+    text-decoration: none;
+    color: white;
+    margin: 0 5px 0 5px;
+    background-color: #b4a789;
+    padding: 15px;
+    border-radius: 30px;
+    transition: background-color .4s;
+}
+.transition:hover{
+    background-color: white;
+    color: black;
+}
+
+nav img{
+    grid-area: logo;
+    max-width: 150px;
+    max-height: 150px;
+    padding: 0;
+    margin: 0;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+@media(max-width: 786px){
+    nav{
+        display: inline-flex;
+        flex-direction: column;
+    }
+}
